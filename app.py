@@ -294,7 +294,7 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("ev_charging_station_data.csv")
+    return pd.read_csv("ev_charging_station_data_deploy.csv")
 
 
 df = load_data()

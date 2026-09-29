@@ -1,0 +1,5 @@
+Model,Performance,Interpretability,Robustness,Deployment
+Logistic Regression,7,10,7,10
+Decision Tree,8,9,8,9
+Random Forest,10,7,10,8
+Naive Bayes,6,8,6,10

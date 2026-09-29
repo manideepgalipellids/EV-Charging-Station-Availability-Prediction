@@ -1,0 +1,5 @@
+﻿ev_charging_station_data.csv
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/

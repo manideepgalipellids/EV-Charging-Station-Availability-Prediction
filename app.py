@@ -142,6 +142,11 @@ st.markdown(
 
     div[data-baseweb="input"] input {
         color: #17231d !important;
+
+    }
+    div[data-baseweb="input"] input[type="date"] {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
     }
 
     div[data-baseweb="select"] span {

@@ -143,10 +143,14 @@ st.markdown(
     div[data-baseweb="input"] input {
         color: #17231d !important;
 
+
     }
-    div[data-baseweb="input"] input[type="date"] {
-        color: #ffffff !important;
-        -webkit-text-fill-color: #ffffff !important;
+    div[data-testid="stDateInput"] input {
+        color: #17231d !important;
+        -webkit-text-fill-color: #17231d !important;
+        caret-color: #17231d !important;
+        background-color: #ffffff !important;
+        color-scheme: light !important;
     }
 
     div[data-baseweb="select"] span {
@@ -158,17 +162,31 @@ st.markdown(
        BUTTON
        ======================================================== */
 
-    .stButton > button {
+    div[data-testid="stButton"] button,
+    div[data-testid="stButton"] button:disabled,
+    div[data-testid="stButton"] button[disabled] {
+        background: #168043 !important;
         background-color: #168043 !important;
         color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
         border: 1px solid #168043 !important;
         border-radius: 10px !important;
         min-height: 44px;
-        font-weight: 750;
+        font-weight: 750 !important;
+        opacity: 1 !important;
+        cursor: pointer !important;
     }
 
-    .stButton > button p {
+    div[data-testid="stButton"] button p,
+    div[data-testid="stButton"] button span {
         color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    div[data-testid="stButton"] button:hover {
+        background: #116b37 !important;
+        background-color: #116b37 !important;
+        border-color: #116b37 !important;
     }
 
     .stButton > button:hover {
@@ -724,6 +742,8 @@ st.markdown(
         EV Charging Station Availability Prediction
         <br>
         Supervised Machine Learning · EV ChargeFinder
+        <br>
+        @manideep_projects
     </div>
     """,
     unsafe_allow_html=True
